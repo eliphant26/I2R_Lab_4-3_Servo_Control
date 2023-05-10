@@ -1,0 +1,23 @@
+#include <Servo.h>
+
+Servo MyServo;
+
+int pos1 = 180;
+int pos2 = 0;
+int pos3 = 180;
+int servoPin = 9;
+
+
+void setup() {
+  MyServo.attach(servoPin);
+  
+}
+
+void loop() {
+  MyServo.write(pos1);
+  delay(1000);
+  MyServo.write(pos2);
+  delay(1000);
+  MyServo.write(pos3);
+  delay(1000);
+}
